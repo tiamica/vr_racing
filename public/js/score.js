@@ -19,7 +19,7 @@ function checkCollision(z1, z2) {
 //updates score
 function updateDisplayScore() {
     var scoredisplay = document.getElementById("score_overlay");
-    scoredisplay.setAttribute("text", "align: center; width: 100;color:red; height:100; value:" + localStorage.getItem('score_vr_race') + ";");
+    scoredisplay.setAttribute("text", "align: center; width: 100;color:white; height:100; value:" + localStorage.getItem('score_vr_race') + ";");
 }
 
 //checks for collisions
