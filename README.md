@@ -1,4 +1,4 @@
-# vr_racing
+# VR Raching game - vr_racing
 A-Frame based VR game
 
 ## Running the game
@@ -13,4 +13,7 @@ Built by:
 * Kartikey Pandey
 * Manan Jain
 * Vedansh Bhartia
+* Emmanuel Ihenacho
 
+## Builds In Netlify 
+* Emmanuel Ihenacho
