@@ -6,6 +6,7 @@ A-Frame based VR game
 * run `python -m SimpleHTTPServer`
 * Open `localhost:8000` in your browser
 * Alternatively, you can create an Apache or nginx virtualhost
+* We will be hosting this using NETLIFY.
 
 ## Developers
 Built by:
