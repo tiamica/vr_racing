@@ -79,6 +79,20 @@
 				<a-entity position="1.176 -0.748 -2.359" scale="0.5 0.5 0.5" geometry="primitive:sphere" material="color:#000000"></a-entity>
 			</a-entity>
 		</a-entity>
+		<a-entity oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
+	        <a-entity oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
+
+		AFRAME.registerComponent('thumbstick-logging',{
+			  init: function () {
+			    this.el.addEventListener('thumbstickmoved', this.logThumbstick);
+			  },
+			  logThumbstick: function (evt) {
+			    if (evt.                                                                                                                                                                                                                                                                                                            zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzdetail.y > 0.95) { console.log("DOWN"); }
+			    if (evt.detail.y < -0.95) { console.log("UP"); }
+			    if (evt.detail.x < -0.95) { console.log("LEFT"); }
+			    if (evt.detail.x > 0.95) { console.log("RIGHT"); }
+			  }
+			});
 		<a-entity position="10 4 0" rotation="0 90 0">
 			<a-camera></a-camera>
 		</a-entity>
